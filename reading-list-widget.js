@@ -31,11 +31,9 @@ $(document).ready(function () {
                 percent = ((top - this_top) / (height - widget_height)) * 100;
                 if (percent >= 100) {
                     percent = 100;
-                    console.log('Percentage = ' + percent);
                     $(".reading-list-widget .reading-list-progress-bar-bg:eq(" + i + ") i").css("color", "#ffffff");
                 }
                 else {
-                    console.log('Percentage = ' + percent);
                     $(".reading-list-widget .reading-list-progress-bar-bg:eq(" + i + ") i").css("color", "#36a7f3");
                 }
             } else if (top > this_bottom) {
@@ -43,6 +41,7 @@ $(document).ready(function () {
                 $(".reading-list-widget .reading-list-progress-bar-bg:eq(" + i + ") i").css("color", "#fff");
             }
 
+            // fix to complete the last reading box (If not, last box would have still 10% not filled up)
             if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
                 percent = 100;
                 $(".reading-list-widget .reading-list-progress-bar-bg:eq(" + i + ") i").css("color", "#fff");
