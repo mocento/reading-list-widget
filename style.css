@@ -1,0 +1,134 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    padding: 8.5em 0 0;
+    margin: 0 auto;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+section {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0.5em 0;
+    text-align: center;
+    background: #1F282D;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    margin: 3px;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    font-size: 1em;
+    padding: 5px 0px 0px;
+    width: auto;
+    color: #9ab;
+    font-weight: 700;
+    transition: color 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover, a:focus, .active {
+    /* color: #fff;*/
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+}
+
+p {
+    text-indent: 0px;
+}
+
+p:first-of-type {
+    text-indent: 0;
+}
+
+img {
+    width: 100%;
+    margin: 2.5em 0;
+    display: block;
+}
+
+.reading-list-widget {
+    font-size: 12px;
+}
+
+.reading-list-widget.affix {
+    position: fixed;
+    width: 150px;
+    top: 90px;
+}
+
+blockquote {
+    background-color: yellow;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2.5em;
+}
+
+.reading-list-progress-bar {
+
+}
+
+.progress-bar-bg {
+}
+
+.reading-list-widget .reading-list-progress-bar-bg {
+    position: relative;
+    display: block;
+    background-color: rgba(209, 209, 209, 0.1);
+}
+
+.reading-list-widget .reading-list-progress-bar-bg span {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 0;
+    height: 100%;
+    z-index: 0;
+    background-color: rgb(220, 220, 220);
+    /*background-color: grey;*/
+}
+
+.reading-list-widget .reading-list-progress-bar-bg a {
+    z-index: 2;
+}
+
+.reading-list-widget .reading-list-progress-bar-bg i {
+    position: absolute;
+    right: -30px;
+    height: 40px;
+    line-height: 40px;
+    color: #36a7f3;;
+
+    -webkit-transition: color .3s;
+    transition: color .3s;
+}
+
+.reading-list-title {
+    position: relative;
+    text-align: center;
+    background-color: rgb(200, 196, 196);
+    border-top: 1px solid rgb(10, 10, 10);
+}
